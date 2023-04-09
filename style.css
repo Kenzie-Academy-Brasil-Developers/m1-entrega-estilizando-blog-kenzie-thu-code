@@ -5,40 +5,48 @@
 body{
     text-align: center;
     font-family: 'roboto', sans-serif;
+    width: 100%;
      height: 100vh;
     background: color rgb(239, 237, 244);
-    margin: 50px;
-    padding: 20px;
-}
-
-
-
-
-header {
-    margin-top: 5px;
-   
-}
-
-
-
-h1{
-font-size: 104px;
-color: blue;
-
-}
-
-
-article {
-    display: block;
+ 
+    
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 100px;
-    border: 10px;
-    padding: 10px;
-   
-   
 }
 
+
+
+header h1 {
+  margin: 50px;
+  padding: 50px;
+  font-size: 100px;
+  border-radius: 50px;
+  color: rgb(245, 245, 249);
+  background: rgb(63,128,176);
+  background: linear-gradient(90deg, rgba(63,128,176,1) 8%, rgba(3,0,255,1) 49%, rgba(51,173,187,1) 96%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+section  {
+  margin: 10px;
+  padding: 5px;
+ 
+  
+  }
+
+article {
+    margin: 50px;
+    padding: 50px;   
+    border: solid rgb(223, 220, 232);
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+}
+article:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
 
 h2{
@@ -62,11 +70,23 @@ h3 {
     margin: 10px;
 }
 
+img{
+  display: flex;
+  width: 170px;
+  height: 150px;
+ 
 
-a {
-    text-decoration: underline;
+
+  flex-wrap: column;
+  justify-content: center;
+  align-items: flex-start;
+
 }
 
+a {
+  font-size: 30px;
+    
+   }
 
 
 label{
@@ -82,7 +102,9 @@ label{
 
 
   input:focus {
-    color: blue;
+    color: rgb(187, 187, 210);
+    border: solid 5px;
+
   }
 
 
@@ -90,11 +112,13 @@ label{
     border-radius: 5px;
     margin: 5px;
     height: 25px;
-    color: rgb(12, 1, 54);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
   }
 
 
   button:hover {
-    color: rgb(7, 12, 167);
+    color: rgb(187, 187, 210);;
+    border: solid 3px;
+    box-shadow: rgba(49, 49, 169, 0.25) 0px 30px 60px -12px, rgba(70, 46, 136, 0.3) 0px 18px 36px -18px;
   }
